@@ -13,10 +13,9 @@ export default function FancyCard() {
         style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-        <Text style={styles.cardTitle}>Hawa Mahal</Text>
+            <Text style={styles.cardTitle}>Hawa Mahal</Text>
             <Text style={styles.cardLabel}>Pink City, jaipur</Text>
-            <Text style={styles.cardDescription}>The Hawa Mahal is a palace in the city of Jaipur, India. Built from
-            red and pink sandstone, it is on the edge of the City Palace.</Text>
+            <Text style={styles.cardDescription}>The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, it is on the edge of the City Palace.</Text>
             <Text style={styles.cardFooter}>12 mins away</Text>
         </View>
       </View>
@@ -28,12 +27,12 @@ const styles = StyleSheet.create({
     headingText:{
         fontSize:24,
         fontWeight: 'bold',
-        paddingHorizontal:8
+        paddingHorizontal:8,
     },
     card:{
         width:380,
-        height:360,
-        borderRadius:6,
+        height:330,
+        borderRadius:20,
         marginVertical:12,
         marginHorizontal:16
     },
@@ -48,8 +47,8 @@ const styles = StyleSheet.create({
     cardImage:{
         height: 180,
         marginBottom:8,
-        borderTopLeftRadius:6,
-        borderTopRightRadius:6
+        borderTopLeftRadius:20,
+        borderTopRightRadius:20
     },
     cardBody:{
         flex:1,
@@ -75,6 +74,7 @@ const styles = StyleSheet.create({
         flexShrink:1
     },
     cardFooter:{
-        color:'#000000'
+        color:'#000000',
+        flex:1
     }
 })
